@@ -9,9 +9,9 @@
 {% block footer %}{% endblock %}
 
 {% block body %}
-    <img src="Humber Map Resized.png" style="align-content: center;" usemap="#image-map" width="1000px" height="1000px">
+   {#  <img src="Humber Map Resized.png" style="align-content: center;" usemap="#image-map" width="1000px" height="1000px">
 
-    <map name="image-map">
+     <map name="image-map">
         <area target="" alt="" title="LRC" href="{{ path('admin_index') }}" coords="504,4,746,246" shape="rect">
         <area target="" alt="" title="CTI" href="{{ path('admin_index') }}" coords="755,6,995,248" shape="rect">
         <area target="" alt="" title="H" href="{{ path('admin_index') }}" coords="5,254,246,498" shape="rect">
@@ -25,5 +25,29 @@
         <area target="" alt="" title="JF" href="{{ path('admin_index') }}}" coords="5,752,248,996" shape="rect">
         <area target="" alt="" title="LX" href="{{ path('admin_index') }}" coords="254,752,497,992" shape="rect">
     </map>
+    #}
+
+    <div class="grid-container">
+
+
+        <a href="{{ path('admin_index') }}"><div class="grid-item zoom" style="background-image: url('lot_6 resided.png')"></div>
+        </a>
+        <a href="{{ path('admin_index') }}"><div class="grid-item zoom" style="background-image: url('Humber Map Resized.png')" ></div>
+        </a>
+        <a href="{{ path('admin_index') }}"><div class="grid-item zoom" style="background-image: url('Humber Map Resized.png')"></div>
+        </a>
+        <a href="{{ path('admin_index') }}"><div class="grid-item zoom" style="background-image: url('Humber Map Resized.png')"></div>
+        </a>
+        <a href="{{ path('admin_index') }}"><div class="grid-item zoom" style="background-image: url('Humber Map Resized.png')"></div>
+        </a>
+        <a href="{{ path('admin_index') }}"><div class="grid-item zoom" style="background-image: url('Humber Map Resized.png')"></div>
+        </a>
+        <a href="{{ path('admin_index') }}"><div class="grid-item zoom" style="background-image: url('Humber Map Resized.png')"></div>
+        </a>
+        <a href="{{ path('admin_index') }}"><div class="grid-item zoom" style="background-image: url('Humber Map Resized.png')"></div>
+        </a>
+        <a href="{{ path('admin_index') }}"><div class="grid-item zoom" style="background-image: url('Humber Map Resized.png')"></div>
+        </a>
+    </div>
 
 {% endblock %}

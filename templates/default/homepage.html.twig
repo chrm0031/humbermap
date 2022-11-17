@@ -2,6 +2,8 @@
 
 {% block body_id 'homepage' %}
 
+
+
 {#
     the homepage is a special page which displays neither a header nor a footer.
     this is done with the 'trick' of defining empty Twig blocks without any content
@@ -9,6 +11,9 @@
 {% block footer %}{% endblock %}
 
 {% block body %}
+
+
+
    {#  <img src="Humber Map Resized.png" style="align-content: center;" usemap="#image-map" width="1000px" height="1000px">
 
      <map name="image-map">
@@ -26,28 +31,78 @@
         <area target="" alt="" title="LX" href="{{ path('admin_index') }}" coords="254,752,497,992" shape="rect">
     </map>
     #}
-
+{#
     <div class="grid-container">
 
 
-        <a href="{{ path('admin_index') }}"><div class="grid-item zoom" style="background-image: url('bus_terminal.png')"> Buss Terminal</div>
+        <a href="{{ path('admin_index') }}"><div class="item-a zoom" style="background-image: url('bus_terminal.png')"> Buss Terminal</div>
         </a>
-        <a href="{{ path('admin_index') }}"><div class="grid-item zoom" style="background-image: url('centre_c.png')" >Centre</div>
+        <a href="{{ path('admin_index') }}"><div class="item-a zoom" style="background-image: url('centre_c.png')" >Centre</div>
         </a>
-        <a href="{{ path('admin_index') }}"><div class="grid-item zoom" style="background-image: url('east_side.png')">East Side</div>
+        <a href="{{ path('admin_index') }}"><div class="item-a zoom" style="background-image: url('east_side.png')">East Side</div>
         </a>
-        <a href="{{ path('admin_index') }}"><div class="grid-item zoom" style="background-image: url('lot_6.png')">Lot 6</div>
+        <a href="{{ path('admin_index') }}"><div class="item-a zoom" style="background-image: url('lot_6.png')">Lot 6</div>
         </a>
         <a href="{{ path('admin_index') }}"><div class="grid-item zoom" style="background-image: url('lot_7.png')">Lot 7</div>
         </a>
         <a href="{{ path('admin_index') }}"><div class="grid-item zoom" style="background-image: url('lot_8.png')">Lot 8</div>
         </a>
-        <a href="{{ path('admin_index') }}"><div class="grid-item zoom" style="background-image: url('lot_9.png')">Lot 9</div>
+        <a href="{{ path('admin_index') }}"><div class="grid-item-c zoom" style="background-image: url('lot_9.png')">Lot 9</div>
         </a>
-        <a href="{{ path('admin_index') }}"><div class="grid-item zoom" style="background-image: url('lot_10.png')">Lot 10</div>
+        <a href="{{ path('admin_index') }}"><div class="grid-item-c zoom" style="background-image: url('lot_10.png')">Lot 10</div>
         </a>
-        <a href="{{ path('admin_index') }}"><div class="grid-item zoom" style="background-image: url('lot_11.png')">Lot 11</div>
+        <a href="{{ path('admin_index') }}"><div class="grid-item-c zoom" style="background-image: url('lot_11.png')">Lot 11</div>
+        </a>
+        <a href="{{ path('admin_index') }}"><div class="grid-item-c zoom" style="background-image: url('lot_3.png')">Lot 3</div>
+        </a>
+        <div class= "grid-item-b" style="background-image: url('large.png')"> </div>
+    </div> #}
+
+
+
+
+    <div class="grid-container">
+        <div class= "main">
+            <img class="map" src="large.png" alt="imagemap" usemap="#image-map">
+
+            <map name="image-map">
+                <area target="" alt="lot10" title="lot10" href="{{ path('admin_index') }}" coords="46,94,214,177" shape="rect">
+                <area target="" alt="lot9" title="lot9" href="{{ path('admin_index') }}" coords="47,179,214,245" shape="rect">
+                <area target="" alt="lot11" title="lot11" href="{{ path('admin_index') }}" coords="46,246,168,247,168,331,76,339,47,312" shape="poly">
+                <area target="" alt="Centre" title="Centre" href="{{ path('admin_index') }}" coords="171,247,278,246,278,365,169,333" shape="poly">
+                <area target="" alt="East" title="East" href="{{ path('admin_index') }}" coords="280,446,356,446,357,245,278,245" shape="poly">
+                <area target="" alt="lot3" title="lot3" href="{{ path('admin_index') }}" coords="393,293,505,395" shape="rect">
+                <area target="" alt="busterminal" title="busterminal" href="{{ path('admin_index') }}" coords="489,169,340,175,340,244,485,244" shape="poly">
+                <area target="" alt="lot7" title="lot7" href="{{ path('admin_index') }}" coords="216,177,338,244" shape="rect">
+                <area target="" alt="lot8" title="lot8" href="{{ path('admin_index') }}" coords="214,91,338,175" shape="rect">
+                <area target="" alt="lot6" title="lot6" href="{{ path('admin_index') }}" coords="337,89,455,42,478,77,482,98,482,109,490,167,340,175" shape="poly">
+
+            </map>
+        </div>
+        <a href="{{ path('admin_index') }}"><div class="a zoom" style="background-image: url('bus_terminal 250px.png')"> Buss Terminal</div>
+        </a>
+        <a href="{{ path('admin_index') }}"><div class="b zoom" style="background-image: url('centre_c 250px.png')" >Centre</div>
+        </a>
+        <a href="{{ path('admin_index') }}"><div class="c zoom" style="background-image: url('east_side 250px.png')">East Side</div>
+        </a>
+        <a href="{{ path('admin_index') }}"><div class="d zoom" style="background-image: url('lot_6 250px.png')">Lot 6</div>
+        </a>
+
+        <a href="{{ path('admin_index') }}"><div class="f zoom" style="background-image: url('lot_8 250px.png')">Lot 8</div>
+        </a>
+        <a href="{{ path('admin_index') }}"><div class="g zoom" style="background-image: url('lot_9 250px.png')">Lot 9</div>
+        </a>
+        <a href="{{ path('admin_index') }}"><div class="h zoom" style="background-image: url('lot_10 250px.png')">Lot 10</div>
+        </a>
+        <a href="{{ path('admin_index') }}"><div class="i zoom" style="background-image: url('lot_11 250px.png')">Lot 11</div>
+        </a>
+        <a href="{{ path('admin_index') }}"><div class="j zoom" style="background-image: url('lot_3 250px.png')">Lot 3</div>
+        </a>
+        <a href="{{ path('admin_index') }}"><div class="e zoom" style="background-image: url('lot_7 250px.png')">Lot 7</div>
         </a>
     </div>
+
+
+
 
 {% endblock %}

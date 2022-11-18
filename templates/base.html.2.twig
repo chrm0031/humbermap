@@ -23,7 +23,12 @@ See https://symfony.com/doc/current/templates.html#template-inheritance-and-layo
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
         <script type="text/javascript" src="../jquery.maphilight.js"></script>
         <script type="text/javascript">$(function() {
-                $('.map').maphilight();
+                $('.map').maphilight({
+                    stroke:true,
+                    strokeColor: '#5eb5e0',
+                    fillOpacity: 0.5,
+                    strokeWidth: 3
+                });
                 $('#p1').mouseover(function(e) {
                     $('#bus').mouseover();
                 }).mouseout(function(e) {

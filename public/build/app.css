@@ -63,18 +63,20 @@ area:hover
 
 }
 .grid-container {  display: grid;
-  grid-template-columns: 275px 620px 275px;
+  grid-template-columns: 275px 310px 310px 275px;
   grid-template-rows: 260px 260px 260px 260px;
   gap: 0px 0px;
-  grid-auto-flow: column;
-  border:1px solid black;
+  grid-auto-flow: row;
   font-size: 26px;
   text-align: left;
+}
+
+.grid-container {
   grid-template-areas:
-    "a . n"
-    "b main g"
-    "c main h"
-    "d . j";
+    "a e f g"
+    "b main main h"
+    "c main main i"
+    "d k k j";
 }
 
 .main { grid-area: main; }
@@ -97,9 +99,11 @@ area:hover
 
 .i { grid-area: i; }
 
-.j { grid-area: j; }
+.j { grid-area: j;
+ }
 
-.n { grid-area: n; }
+.k { grid-area: k;
+font-size: 32px}
 
 
 audio,

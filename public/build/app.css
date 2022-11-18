@@ -68,6 +68,8 @@ area:hover
   gap: 0px 0px;
   grid-auto-flow: column;
   border:1px solid black;
+  font-size: 26px;
+  text-align: left;
   grid-template-areas:
     "a . n"
     "b main g"

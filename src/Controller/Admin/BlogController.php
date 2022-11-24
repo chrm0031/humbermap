@@ -54,9 +54,30 @@ class BlogController extends AbstractController
     public function index(PostRepository $posts): Response
     {
         $authorPosts = $posts->findBy(['author' => $this->getUser()], ['publishedAt' => 'DESC']);
-
         return $this->render('admin/blog/index.html.twig', ['posts' => $authorPosts]);
     }
+
+    #[Route('/test', methods: ['GET'], name: 'test')]
+    public function index1(PostRepository $posts): Response
+    {
+
+        $authorPosts = $posts->findBy(['author' => $this->getUser()], ['publishedAt' => 'DESC']);
+        return $this->render('admin/blog/test.php', ['posts' => $authorPosts]);
+
+    }
+
+    #[Route('/test1', methods: ['GET'], name: 'test1')]
+    public function index2(PostRepository $posts): Response
+    {
+
+        $authorPosts = $posts->findBy(['author' => $this->getUser()], ['publishedAt' => 'DESC']);
+        return $this->render('admin/blog/index1.html.twig', ['posts' => $authorPosts]);
+
+    }
+
+
+
+
 
     /**
      * Creates a new Post entity.

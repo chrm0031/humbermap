@@ -60,20 +60,73 @@ class BlogController extends AbstractController
     #[Route('/test', methods: ['GET'], name: 'test')]
     public function index1(PostRepository $posts): Response
     {
-
-        $authorPosts = $posts->findBy(['author' => $this->getUser()], ['publishedAt' => 'DESC']);
-        return $this->render('admin/blog/test.php', ['posts' => $authorPosts]);
-
+        return $this->redirect("http://localhost:8000/en/blog/posts/bus-terminal");
     }
 
-    #[Route('/test1', methods: ['GET'], name: 'test1')]
-    public function index2(PostRepository $posts): Response
+    #[Route('/busterminal', methods: ['GET'], name: 'busterminal')]
+    public function east(PostRepository $posts): Response
     {
-
-        $authorPosts = $posts->findBy(['author' => $this->getUser()], ['publishedAt' => 'DESC']);
-        return $this->render('admin/blog/index1.html.twig', ['posts' => $authorPosts]);
-
+        /**
+        *$authorPosts = $posts->findBy(['author' => $this->getUser()], ['publishedAt' => 'DESC']);
+        *return $this->render('admin/blog/busterminal.html..twig', ['posts' => $authorPosts]);
+         */
+        return $this->redirect("http://localhost:8000/en/blog/posts/bus-terminal");
     }
+
+    #[Route('/east', methods: ['GET'], name: 'east')]
+    public function busterminal(PostRepository $posts): Response
+    {
+        return $this->redirect("http://localhost:8000/en/blog/posts/east-side");
+    }
+
+    #[Route('/centre', methods: ['GET'], name: 'centre')]
+    public function centre(PostRepository $posts): Response
+    {
+        return $this->redirect("http://localhost:8000/en/blog/posts/centre");
+    }
+
+    #[Route('/lot3', methods: ['GET'], name: 'lot3')]
+    public function lot3(PostRepository $posts): Response
+    {
+        return $this->redirect("http://localhost:8000/en/blog/posts/lot-3");
+    }
+
+    #[Route('/lot6', methods: ['GET'], name: 'lot6')]
+    public function lot6(PostRepository $posts): Response
+    {
+        return $this->redirect("http://localhost:8000/en/blog/posts/lot-6");
+    }
+
+    #[Route('/lot7', methods: ['GET'], name: 'lot7')]
+    public function lot7(PostRepository $posts): Response
+    {
+        return $this->redirect("http://localhost:8000/en/blog/posts/lot-07");
+    }
+
+    #[Route('/lot8', methods: ['GET'], name: 'lot8')]
+    public function lot8(PostRepository $posts): Response
+    {
+        return $this->redirect("http://localhost:8000/en/blog/posts/lot-8");
+    }
+
+    #[Route('/lot9', methods: ['GET'], name: 'lot9')]
+    public function lot9(PostRepository $posts): Response
+    {
+        return $this->redirect("http://localhost:8000/en/blog/posts/lot-9");
+    }
+
+    #[Route('/lot10', methods: ['GET'], name: 'lot10')]
+    public function lot10(PostRepository $posts): Response
+    {
+        return $this->redirect("http://localhost:8000/en/blog/posts/lot-10");
+    }
+
+    #[Route('/lot11', methods: ['GET'], name: 'lot11')]
+    public function lot11(PostRepository $posts): Response
+    {
+        return $this->redirect("http://localhost:8000/en/blog/posts/lot-11");
+    }
+
 
 
 

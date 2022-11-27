@@ -70,6 +70,7 @@ area:hover
   text-align: left;
   background-color: #f9f9f9;
   font-family: "Franklin Gothic Medium", "Franklin Gothic Medium Cond", "Franklin Gothic Book";
+  margin-left:100px;
 }
 
 .grid-container {
@@ -3097,6 +3098,7 @@ output {
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   -o-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
   transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
+
 }
 .form-control:focus {
   border-color: #2C3E50;
@@ -4693,9 +4695,11 @@ tbody.collapse.in {
 .navbar-brand {
   float: left;
   height: 60px;
+  width:600px;
   padding: 19.5px 15px;
   font-size: 25px;
   line-height: 21px;
+  text-align: left;
   font-family: "Franklin Gothic Medium", "Franklin Gothic Medium Cond", "Franklin Gothic Book";
 }
 .navbar-brand:hover, .navbar-brand:focus {
@@ -7345,6 +7349,7 @@ input {
   border-width: 2px;
   -webkit-box-shadow: none;
   box-shadow: none;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic Medium Cond", "Franklin Gothic Book";
 }
 .form-control:focus,
 input:focus {
@@ -7786,6 +7791,7 @@ body#login #login-users-help p .console {
 body#blog_index #main h1,
 body#blog_index #main p {
   margin-bottom: 0.5em;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic Medium Cond", "Franklin Gothic Book";
 
 }
 
@@ -7811,6 +7817,7 @@ body#blog_index .post-tags .label-default i {
    ------------------------------------------------------------------------- */
 body#blog_post_show #main h3 {
   margin-bottom: 0.75em;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic Medium Cond", "Franklin Gothic Book";
 }
 
 body#blog_post_show .post-tags .label-default {
@@ -7867,6 +7874,7 @@ body#comment_form_error h1.text-danger {
 body#blog_search #main h1,
 body#blog_search #main p {
   margin-bottom: 0.5em;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic Medium Cond", "Franklin Gothic Book";
 }
 
 body#blog_search article.post:first-child {

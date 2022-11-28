@@ -63,9 +63,10 @@
     <div class="logo-text">Humber Map</div>
     <div class="side-text">Select an Area to publish a comment:</div>
 
+{#
     <div class="grid-container">
         <div class= "main">
-            <img class="map" src="large.png" alt="imagemap" usemap="#image-map">
+            <img class="map" src="Large upd.png" alt="imagemap" usemap="#image-map">
 
             <map name="image-map">
                 <area id="lot10" target="" alt="lot10" href="{{ path('lot10') }}" title="lot10" coords="46,94,214,177" shape="rect">
@@ -80,7 +81,29 @@
                 <area id="lot6" target="" alt="lot6" href="{{ path('lot6') }}" title="lot6" coords="337,89,455,42,478,77,482,98,482,109,490,167,340,175" shape="poly">
 
             </map>
-        </div>
+
+#}
+
+
+            <div class="grid-container">
+                <div class= "main">
+                    <img class="map" src="Large upd.png" alt="imagemap" usemap="#image-map">
+
+            <map name="image-map">
+                <area id="lot10" target="" alt="lot10" href="{{ path('lot10') }}" title="lot11" coords="7,71,206,171" shape="rect">
+                <area id="lot8" target="" alt="lot8" href="{{ path('lot8') }}" title="lot8"  coords="207,70,351,70,353,168,208,170" shape="poly">
+                <area id="lot6" target="" alt="lot6" href="{{ path('lot6') }}" title="lot6" coords="351,69,487,14,509,41,518,63,522,92,524,114,526,136,529,161,354,167" shape="poly">
+                <area id="lot9" target="" alt="lot9" href="{{ path('lot9') }}" title="lot9" coords="8,173,207,249" shape="rect">
+                <area id="lot7" target="" alt="lot7" href="{{ path('lot7') }}" title="lot7" coords="208,171,353,249" shape="rect">
+                <area id="bus" target="" alt="busterminal" href="{{ path('busterminal') }}" title="busterminal" coords="528,163,530,191,530,213,530,226,526,250,354,248,354,169" shape="poly">
+                <area id="lot11" target="" alt="lot11" href="{{ path('lot11') }}" title="lot11" coords="9,251,154,251,153,350,40,357,9,326" shape="poly">
+                <area id="centre" target="" alt="Centre" href="{{ path('centre') }}" title="Centre" coords="154,248,283,251,283,388,155,351" shape="poly">
+                <area id="east" target="" alt="East" href="{{ path('east') }}" title="East" coords="375,250,284,480" shape="rect">
+                <area id="lot3" target="" alt="lot3" href="{{ path('lot3') }}" title="lot3" coords="415,421,552,305" shape="rect">
+            </map>
+
+                </div>
+
         <a href="{{ path('busterminal') }}"><div class="a zoom" id="p1" style="background-image: url('bus_terminal 250px.png')"> Bus Terminal</div>
         </a>
         <a href="{{ path('centre') }}"><div class="b zoom" id="p2" style="background-image: url('centre_c 250px.png')" >Centre</div>

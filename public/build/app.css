@@ -67,7 +67,7 @@ area:hover
 
 .grid-container {  display: grid;
   grid-template-columns: 275px 310px 310px 275px;
-  grid-template-rows: 255px 255px 255px 255px;
+  grid-template-rows: 260px 255px 255px 255px;
   gap: 0px 0px;
   grid-auto-flow: row;
   font-size: 23px;

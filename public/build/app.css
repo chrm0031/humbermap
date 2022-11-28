@@ -61,6 +61,10 @@ area:hover
 
 }
 
+.zoom:hover+k{
+  display:block;
+}
+
 .grid-container {  display: grid;
   grid-template-columns: 275px 310px 310px 275px;
   grid-template-rows: 255px 255px 255px 255px;
@@ -70,15 +74,15 @@ area:hover
   text-align: left;
   background-color: #f9f9f9;
   font-family: "Franklin Gothic Medium", "Franklin Gothic Medium Cond", "Franklin Gothic Book";
-  margin-left:100px;
+
 }
 
 .grid-container {
   grid-template-areas:
-    "a k k g"
-    "b main main h"
-    "c main main i"
-    "d e f j";
+    "a b c d"
+    "e main main h"
+    "f main main i"
+    "k g j j";
 }
 
 .main { grid-area: main; }
@@ -115,11 +119,34 @@ color:white;}
  }
 
 .k { grid-area: k;
-font-size: 45px;
-color:#000033;
-  font-family: "Franklin Gothic Medium", "Franklin Gothic Medium Cond", "Franklin Gothic Book";
 }
 
+.logo{
+  float:left;
+  background-image: url('logo 50px.png');
+  width: 50px;
+  height: 50px;
+
+  position: fixed;
+  left:100px;
+}
+.logo-text{
+  position: fixed;
+  left:160px;
+  font-size: 30px;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic Medium Cond", "Franklin Gothic Book";
+
+}
+
+.side-text{
+  position: fixed;
+  left:100px;
+  top:250px;
+  font-size: 35px;
+  font-family: "Franklin Gothic Medium", "Franklin Gothic Medium Cond", "Franklin Gothic Book";
+  width: 200px;
+
+}
 
 audio,
 canvas,
@@ -3019,7 +3046,7 @@ legend {
   margin-bottom: 21px;
   font-size: 22.5px;
   line-height: inherit;
-  color: #2C3E50;
+  color: #FFFFFF;
   border: 0;
   border-bottom: 1px solid transparent;
 }
@@ -7821,8 +7848,8 @@ body#blog_post_show #main h3 {
 }
 
 body#blog_post_show .post-tags .label-default {
-  background-color: #e9ecec;
-  color: #6D8283;
+  background-color: #000033;
+  color: #CC9900;
   font-size: 16px;
   margin-right: 10px;
   padding: 0.4em 1em 0.5em;

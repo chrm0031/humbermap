@@ -127,6 +127,15 @@ class BlogController extends AbstractController
         return $this->redirect("http://localhost:8000/en/blog/posts/lot-11");
     }
 
+    #[Route('/test1', methods: ['GET'], name: 'test2')]
+    public function index3(PostRepository $posts): Response
+    {
+
+        $authorPosts = $posts->findBy(['author' => $this->getUser()], ['publishedAt' => 'DESC']);
+        return $this->render('admin/blog/index1.html.twig', ['posts' => $authorPosts]);
+
+    }
+
 
 
 

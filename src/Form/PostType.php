@@ -68,7 +68,7 @@ class PostType extends AbstractType
             ])
             ->add('tags', TagsInputType::class, [
                 'label' => 'label.tags',
-                'required' => false,
+                'required' => true,
             ])
             // form events let you modify information or fields at different steps
             // of the form handling process.

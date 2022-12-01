@@ -122,24 +122,23 @@ color:white;}
 }
 
 .logo{
-  float:left;
-  background-image: url('logo 50px.png');
-  width: 50px;
-  height: 50px;
 
-  position: fixed;
-  left:100px;
+  background-image: url('Humber_logo_gold.png');
+  width: 45px;
+  height: 40px;
+  margin-top: 20px;
+
+
 }
 .logo-text{
-  position: fixed;
-  left:160px;
+  text-align-all: center;
   font-size: 30px;
   font-family: "Franklin Gothic Medium", "Franklin Gothic Medium Cond", "Franklin Gothic Book";
 
 }
 
 .side-text{
-  position: fixed;
+  position: relative;
   left:100px;
   top:250px;
   font-size: 35px;
@@ -4727,6 +4726,7 @@ tbody.collapse.in {
   font-size: 25px;
   line-height: 21px;
   text-align: left;
+  padding-left: 75px;
   font-family: "Franklin Gothic Medium", "Franklin Gothic Medium Cond", "Franklin Gothic Book";
 }
 .navbar-brand:hover, .navbar-brand:focus {

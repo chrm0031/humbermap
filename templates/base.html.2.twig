@@ -8,7 +8,7 @@ See https://symfony.com/doc/current/templates.html#template-inheritance-and-layo
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
-    <title>{% block title %}Humber Map{% endblock %}</title>
+    <title>{% block title %}Humber Facilitates Map{% endblock %}</title>
     <link rel="alternate" type="application/rss+xml" title="{{ 'rss.title'|trans }}" href="{{ path('blog_rss') }}">
 
     {#
@@ -105,12 +105,12 @@ See https://symfony.com/doc/current/templates.html#template-inheritance-and-layo
         <div class="navbar navbar-default navbar-static-top" role="navigation">
             <div class="container">
                 <div class="navbar-header col-md-3 col-lg-2">
-                    <div style="background-image: url('Humber_logo_gold.png');" class="logo">
-                        <a class="navbar-brand" href="{{ path('homepage') }}">
-                            Humber Map
+
+                    <a class="navbar-brand" href="{{ path('homepage') }}" style="margin-top: -5px; margin-left: -85px">
+                            Humber Facilitates Map
                         </a>
 
-                    </div>
+
 
 
                     <button type="button" class="navbar-toggle"
@@ -170,7 +170,7 @@ See https://symfony.com/doc/current/templates.html#template-inheritance-and-layo
                                 </ul>
                             </li>
                         {% endif %}
-{# LANAGUAGE OPTIONB IS HER
+{# LANAGUAGE OPTIONB IS HERE
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false" id="locales">
                                 <i class="fa fa-globe" aria-hidden="true"></i>
@@ -221,6 +221,7 @@ See https://symfony.com/doc/current/templates.html#template-inheritance-and-layo
                     <p>&copy; {{ 'now'|date('Y') }} - The Symfony Project</p>
                     <p>{{ 'mit_license'|trans }}</p>
                 </div>
+               {#
                 <div id="footer-resources" class="col-md-6">
                     <p>
                         <a href="https://twitter.com/symfony" title="Symfony Twitter">
@@ -234,6 +235,7 @@ See https://symfony.com/doc/current/templates.html#template-inheritance-and-layo
                         </a>
                     </p>
                 </div>
+               #}
             </div>
         </div>
     </footer>
